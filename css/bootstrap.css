@@ -6565,7 +6565,8 @@ button.close {
 }
 
 .intro-social {
-    display: block;
+  	display:flex;
+    justify-content:space-evenly;
     position: absolute;
     width: 100%;
     left: 0;
@@ -6579,7 +6580,7 @@ button.close {
   display: inline-block;
 }
 
-ul {
+.intro-social ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
