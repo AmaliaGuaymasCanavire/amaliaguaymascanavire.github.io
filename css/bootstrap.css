@@ -6575,6 +6575,10 @@ button.close {
     padding: 0;
 }
 
+.listHorizontal li {
+  display: inline-block;
+}
+
 ul {
     display: block;
     list-style-type: disc;
