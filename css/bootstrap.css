@@ -1324,7 +1324,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777;
+  color: #000;
 }
 .text-primary {
   color: #337ab7;
@@ -6566,10 +6566,6 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
-
-.text-faded {
-    color: #222;
 }
 
 
