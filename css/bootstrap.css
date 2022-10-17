@@ -6567,11 +6567,5 @@ button.close {
     display: none !important;
   }
 }
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-a.post-link {
-	color: #222
-}
+
 /*# sourceMappingURL=bootstrap.css.map */
