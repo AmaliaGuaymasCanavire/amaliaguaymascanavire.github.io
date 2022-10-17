@@ -27,6 +27,17 @@ a {
     }
 }
 
+.post-link {
+    display: block;
+    font-size: 24px;
+	color: #222
+	&:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+
 h1,
 h2,
 h3,
