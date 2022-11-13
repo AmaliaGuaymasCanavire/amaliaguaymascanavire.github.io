@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Datos personales: ¿A quienes les comparto?¿Cómo me protejo?"
-date: 2022-10-16 
+date: 2022-11-13
 author: Amalia Carolina Guaymas
 categories: ciencias_de_datos
 published: true 
