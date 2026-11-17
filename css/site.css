@@ -123,3 +123,42 @@ hr.light { border-color: var(--mint); margin: 24px auto; }
     justify-content: center;
   }
 }
+
+/* Consistent centered alignment for hero and profile */
+.hero .header-content-inner,
+.about-section .col-lg-8 {
+  text-align: center;
+}
+.hero .hero-statement,
+.hero .hero-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .hero-actions,
+.hero .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .about-principle {
+  border-left: 0;
+  border-top: 2px solid var(--lilac);
+  padding: 18px 12px 0;
+  margin: 30px auto 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hero .header-content-inner,
+  .about-section .col-lg-8 {
+    text-align: center;
+  }
+  .hero .hero-actions {
+    justify-content: center;
+  }
+  .hero .hero-actions .btn {
+    margin: 4px;
+  }
+  .hero .social-links {
+    justify-content: center;
+  }
+}
