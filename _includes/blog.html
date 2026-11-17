@@ -1,27 +1,23 @@
-<section id="blog">
-    <div class="container">
-        <div class="row">
-			{%- if site.posts.size > 0 -%}
-			<h2 class="section-heading text-center">Últimos posteos</h2>
-			<hr class="primary">
-			<ul>
-			  {%- assign post_limit = site.home_post_limit | default: 5 -%}
-			  {%- for post in site.posts limit:post_limit -%}
-			  <li>
-				{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-				<span>{{ post.date | date: date_format }}</span>
-				<p class= "text-muted">
-				  <a class="post-link" href="{{ post.url | relative_url }}">
-					{{ post.title | escape }}
-				  </a>
-				</p>
-				{%- if site.show_excerpts -%}
-				  {{ post.excerpt }}
-				{%- endif -%}
-			  </li>
-			  {%- endfor -%}
-			</ul>
-			{%- endif -%}
-		</div>
+{% if site.posts.size > 0 %}
+<section id="blog" class="writing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="eyebrow text-center"><span data-lang="es">IDEAS Y APRENDIZAJES</span><span data-lang="en">IDEAS & LEARNINGS</span></p>
+        <h2 class="section-heading text-center"><span data-lang="es">Publicaciones</span><span data-lang="en">Writing</span></h2>
+        <hr class="primary">
+        <ul class="post-list">
+          {% assign post_limit = site.home_post_limit | default: 5 %}
+          {% for post in site.posts limit:post_limit %}
+          <li>
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% if site.show_excerpts %}{{ post.excerpt }}{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
+{% endif %}
