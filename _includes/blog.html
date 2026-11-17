@@ -1,23 +1,20 @@
-{% if site.posts.size > 0 %}
 <section id="blog" class="writing-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <p class="eyebrow text-center"><span data-lang="es">IDEAS Y APRENDIZAJES</span><span data-lang="en">IDEAS & LEARNINGS</span></p>
-        <h2 class="section-heading text-center"><span data-lang="es">Publicaciones</span><span data-lang="en">Writing</span></h2>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="eyebrow"><span data-lang="es">IDEAS Y APRENDIZAJES</span><span data-lang="en">IDEAS &amp; LEARNINGS</span></p>
+        <h2 class="section-heading"><span data-lang="es">Videos y contenidos</span><span data-lang="en">Videos &amp; content</span></h2>
         <hr class="primary">
-        <ul class="post-list">
-          {% assign post_limit = site.home_post_limit | default: 5 %}
-          {% for post in site.posts limit:post_limit %}
-          <li>
-            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            {% if site.show_excerpts %}{{ post.excerpt }}{% endif %}
-          </li>
-          {% endfor %}
-        </ul>
+        <p>
+          <span data-lang="es">Un espacio donde comparto videos, ideas y experiencias.</span>
+          <span data-lang="en">A space where I share videos, ideas and experiences.</span>
+        </p>
+        <a class="btn btn-primary" href="https://www.instagram.com/ami.c.gc/?hl=es-la" target="_blank" rel="noopener">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <span data-lang="es">Ver mi Instagram</span>
+          <span data-lang="en">Visit my Instagram</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
-{% endif %}
