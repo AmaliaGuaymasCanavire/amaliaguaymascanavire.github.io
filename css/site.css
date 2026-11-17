@@ -232,3 +232,86 @@ p,
     line-height: 1.2;
   }
 }
+
+
+/* Accessibility refinements: readable type, contrast, focus and motion */
+:root {
+  --font-small: 0.875rem; /* 14px */
+  --font-base: 1rem;      /* 16px */
+  --font-large: 2.25rem;  /* 36px */
+  --text-accent: #176f63;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  font-size: var(--font-base);
+  line-height: 1.7;
+}
+#mainNav .nav > li > a,
+.language-button,
+.hero-kicker,
+.eyebrow,
+.service-number,
+.project-tag,
+.post-date,
+.footer-note {
+  font-size: var(--font-small);
+}
+p,
+.hero-description,
+.about-section p,
+.service-card p,
+.service-card li,
+.project-card p,
+.project-card .project-method,
+.contact-intro,
+.post-link,
+.contact-links a,
+.contact-button,
+.btn,
+.language-button,
+#mainNav .navbar-brand {
+  font-size: var(--font-base);
+}
+.hero h1,
+.section-heading {
+  font-size: var(--font-large);
+  line-height: 1.25;
+}
+.hero-statement,
+.service-card h3,
+.project-card h3 {
+  font-size: var(--font-base);
+  line-height: 1.5;
+}
+/* Darker teal is used for small text to maintain contrast on light surfaces. */
+.eyebrow,
+.project-tag,
+.project-card a,
+.service-icon {
+  color: var(--text-accent);
+}
+:focus-visible {
+  outline: 3px solid var(--lilac);
+  outline-offset: 3px;
+}
+a, button, .btn, .language-button {
+  min-height: 24px;
+}
+@media (max-width: 767px) {
+  :root { --font-large: 2rem; }
+  .hero h1,
+  .section-heading { line-height: 1.25; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
