@@ -44,7 +44,7 @@ hr.light { border-color: var(--mint); margin: 24px auto; }
 .about-section { background: var(--ink); color: #fff; }
 .about-section .eyebrow { color: var(--mint); }
 .about-section p { color: rgba(255,255,255,.75); font-size: 16px; }
-.about-section .about-lead { color: #fff; font-size: 20px; line-height: 1.65; }
+.about-section .about-lead { color: #fff; font-size: 16px; line-height: 1.65; }
 .about-principle { border-left: 3px solid var(--lilac); padding: 8px 0 8px 20px; margin: 30px auto 0; max-width: 650px; font-weight: 600; }
 .services-section { background: var(--paper); }
 .service-grid { margin-top: 42px; display: flex; flex-wrap: wrap; }
