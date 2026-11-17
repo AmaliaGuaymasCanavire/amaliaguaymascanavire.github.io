@@ -436,3 +436,20 @@ p, li, a, h1, h2, h3 {
     line-height: 1.4;
   }
 }
+
+
+/* Refine hero: remove light frame and move content clear of fixed navigation. */
+.hero .header-content-inner {
+  position: relative;
+  top: 42px;
+}
+.hero .hero-statement {
+  border: 0;
+  border-left: 4px solid var(--mint);
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 767px) {
+  .hero .header-content-inner {
+    top: 28px;
+  }
+}
