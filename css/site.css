@@ -162,3 +162,73 @@ hr.light { border-color: var(--mint); margin: 24px auto; }
     justify-content: center;
   }
 }
+
+
+/* Typography system: three consistent text scales */
+:root {
+  --font-small: 0.8125rem;
+  --font-base: 1rem;
+  --font-large: 2.25rem;
+}
+body {
+  font-size: var(--font-base);
+  line-height: 1.7;
+}
+#mainNav .nav > li > a,
+.language-button,
+.hero-kicker,
+.eyebrow,
+.service-number,
+.project-tag,
+.post-date,
+.footer-note {
+  font-size: var(--font-small);
+}
+p,
+.hero-description,
+.about-section p,
+.service-card p,
+.service-card li,
+.project-card p,
+.project-card .project-method,
+.contact-intro,
+.post-link,
+.contact-links a,
+.contact-button,
+.btn,
+.language-button,
+#mainNav .navbar-brand {
+  font-size: var(--font-base);
+}
+.hero h1,
+.section-heading {
+  font-size: var(--font-large);
+  line-height: 1.2;
+}
+.hero-statement,
+.service-card h3,
+.project-card h3 {
+  font-size: var(--font-base);
+  line-height: 1.5;
+}
+.hero-description,
+.contact-intro {
+  line-height: 1.7;
+}
+.hero-kicker,
+.eyebrow,
+.service-number,
+.project-tag,
+.post-date,
+.footer-note {
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  :root {
+    --font-large: 2rem;
+  }
+  .hero h1,
+  .section-heading {
+    line-height: 1.2;
+  }
+}
