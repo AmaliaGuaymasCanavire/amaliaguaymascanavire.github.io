@@ -1,9 +1,10 @@
 # Site settings
-title: Soy Amalia Carolina Guaymás Canavire
-email: amalia.guaymascan@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Amalia Guaymás Canavire | Data Science & Responsible AI
+email: amalia.guaymas@gmail.com
+description: >-
+  Data Science, Responsible AI and Technology Consulting. Data and AI for people-centered decisions, responsible innovation and social impact.
+baseurl: ""
+url: "https://amaliaguaymascanavire.github.io"
 
 twitter_username: AmyCGC
 github_username: amaliaguaymascanavire
