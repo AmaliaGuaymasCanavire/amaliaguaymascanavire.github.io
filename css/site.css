@@ -453,3 +453,18 @@ p, li, a, h1, h2, h3 {
     top: 28px;
   }
 }
+
+
+/* Match the profile heading typography to the main hero statement. */
+.about-section .section-heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+@media (max-width: 767px) {
+  .about-section .section-heading {
+    font-size: clamp(22px, 5.5vw, 27px);
+    line-height: 1.4;
+  }
+}
