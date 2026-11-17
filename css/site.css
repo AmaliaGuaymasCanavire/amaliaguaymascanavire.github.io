@@ -394,3 +394,15 @@ p, li, a, h1, h2, h3 {
     linear-gradient(110deg, rgba(9,17,16,.96), rgba(9,17,16,.90) 55%, rgba(9,17,16,.84)),
     url('../img/header.jpg');
 }
+
+
+/* Audit fixes: functional accent colors must meet non-text contrast. */
+.service-number {
+  color: #176f63;
+}
+:focus-visible {
+  outline-color: #a43ac2;
+  outline-width: 3px;
+  outline-style: solid;
+  outline-offset: 3px;
+}
