@@ -2,13 +2,16 @@
 <html lang="es">
 {% include head.html %}
 <body id="page-top">
+  <a class="skip-link" href="#main-content"><span data-lang="es">Saltar al contenido principal</span><span data-lang="en">Skip to main content</span></a>
   {% include nav.html %}
   {% include header.html %}
-  {% include call-to-action.html %}
-  {% include services.html %}
-  {% include portfolio.html %}
-  {% include blog.html %}
-  {% include contact.html %}
+  <main id="main-content" tabindex="-1">
+    {% include call-to-action.html %}
+    {% include services.html %}
+    {% include portfolio.html %}
+    {% include blog.html %}
+    {% include contact.html %}
+  </main>
   {% include scripts.html %}
 </body>
 </html>
