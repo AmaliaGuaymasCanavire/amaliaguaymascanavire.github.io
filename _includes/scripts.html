@@ -1,13 +1,35 @@
-<!-- jQuery -->
 <script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.fittext.js"></script>
 <script src="js/wow.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
+<script>
+(function () {
+  var button = document.getElementById('languageToggle');
+  var currentLanguage = 'es';
+  function setLanguage(language) {
+    currentLanguage = language;
+    document.documentElement.lang = language;
+    document.querySelectorAll('[data-lang]').forEach(function (element) {
+      element.hidden = element.getAttribute('data-lang') !== language;
+    });
+    if (button) {
+      button.textContent = language === 'es' ? 'EN' : 'ES';
+      button.setAttribute('aria-label', language === 'es' ? 'Switch to English' : 'Cambiar a español');
+    }
+    try { localStorage.setItem('preferred-language', language); } catch (error) {}
+  }
+  if (button) {
+    button.addEventListener('click', function () {
+      setLanguage(currentLanguage === 'es' ? 'en' : 'es');
+    });
+  }
+  var preferred = 'es';
+  try {
+    var saved = localStorage.getItem('preferred-language');
+    if (saved === 'en' || saved === 'es') preferred = saved;
+  } catch (error) {}
+  setLanguage(preferred);
+})();
+</script>
