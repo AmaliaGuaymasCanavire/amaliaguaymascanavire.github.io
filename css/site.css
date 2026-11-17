@@ -91,3 +91,35 @@ hr.light { border-color: var(--mint); margin: 24px auto; }
   .service-card,.project-card { min-height: 0; }
   .language-switch { padding: 8px 15px 14px; }
 }
+
+/* Centered hero/banner composition */
+.hero .header-content-inner {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero hr {
+  margin: 28px auto;
+}
+.hero-statement,
+.hero-description {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-actions {
+  justify-content: center;
+}
+.social-links {
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .hero .header-content-inner {
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
